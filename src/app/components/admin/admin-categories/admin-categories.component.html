@@ -1,0 +1,39 @@
+<!-- src/app/components/category/category.component.html -->
+<div class="category-container">
+    <h2>Manage Categories</h2>
+  
+    <!-- Form for creating/updating categories -->
+    <div class="category-form">
+      <input
+        type="text"
+        [(ngModel)]="newCategoryName"
+        placeholder="Category Name"
+      />
+      <button (click)="selectedCategory ? updateCategory() : createCategory()">
+        {{ selectedCategory ? 'Update' : 'Create' }}
+      </button>
+      <button *ngIf="selectedCategory" (click)="cancelEdit()">Cancel</button>
+    </div>
+  
+    <!-- List of categories -->
+    <div class="category-list">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let category of categories">
+            <td>{{ category.id }}</td>
+            <td>{{ category.name }}</td>
+            <td>
+              <button (click)="selectCategory(category)">Edit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
