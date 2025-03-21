@@ -1,0 +1,111 @@
+/* Colorful card style for each product */
+mat-grid-tile {
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f9f9f9 0%, #fff9f9 100%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(255, 176, 170, 0.2);
+  }
+  
+  mat-grid-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(255, 128, 128, 0.3);
+  }
+  
+  .row.p-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Product image styles */
+  .row.p-3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    max-height: 250px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(240, 98, 146, 0.2);
+  }
+  
+  .row.p-3 img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Product name */
+  .row.p-3 .mt-3 p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ff4081;
+  }
+  
+  /* Product description */
+  .row.p-3 .mt-2 p {
+    font-size: 0.95rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #4a4a4a;
+    padding: 0 12px;
+  }
+  
+  /* Price section */
+  .row.p-3 .mt-2 b {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .row.p-3 .mt-2 b:first-child {
+    color: #43a047; /* Green discounted price */
+  }
+  
+  .row.p-3 .mt-2 b:last-child {
+    color: #e53935; /* Red strikethrough price */
+  }
+  
+  /* Buttons */
+  .row.p-3 button {
+    background: linear-gradient(to right, #ff4081, #ff6e40);
+    color: #fff;
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .row.p-3 button:hover {
+    background: linear-gradient(to right, #ff6e40, #ff4081);
+    transform: scale(1.05);
+  }
+  
+  /* Search bar styling */
+  mat-form-field.w-50 {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    display: block;
+  }
+  
+  mat-form-field.w-50 input {
+    font-size: 1rem;
+  }
+  
+  /* Load More Button */
+  .text-center button {
+    background: linear-gradient(to right, #42a5f5, #7c4dff);
+    color: white;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .text-center button:hover {
+    background: linear-gradient(to right, #7c4dff, #42a5f5);
+    transform: translateY(-3px);
+  }
+ 

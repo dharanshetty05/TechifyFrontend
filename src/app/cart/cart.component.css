@@ -1,0 +1,74 @@
+/* table {
+    width: 100%;
+}
+
+table td th{
+    padding: 10px;
+} */
+
+
+/* === Table Wrapper === */
+.container {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* === Checkout Button === */
+  button[mat-raised-button] {
+    font-weight: 600;
+    border-radius: 8px;
+  }
+  
+  /* === Table Styling === */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .mat-header-row {
+    background-color: #1e293b;
+  }
+  
+  .mat-header-cell {
+    padding: 14px 16px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white; /* ✅ Ensures white text in header */
+  }
+  
+  .mat-row:nth-child(even) {
+    background-color: #f1f5f9;
+  }
+  
+  .mat-cell {
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #334155;
+  }
+  
+  .mat-cell button {
+    font-size: 13px;
+  }
+  
+  /* === Hover Row Effect === */
+  .mat-row:hover {
+    background-color: #e2e8f0;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* === Responsive Padding (Optional) === */
+  @media (max-width: 768px) {
+    .mat-header-cell, .mat-cell {
+      padding: 10px 12px;
+      font-size: 13px;
+    }
+  
+    button[mat-raised-button] {
+      padding: 8px 16px;
+    }
+  }
+  

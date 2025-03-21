@@ -1,0 +1,51 @@
+/* === Container Styling === */
+.container {
+    font-family: 'Poppins', sans-serif;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  /* === Card Styling === */
+  .card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+  }
+  
+  /* === Form Fields === */
+  mat-form-field {
+    margin-bottom: 20px;
+  }
+  
+  /* === Button Styling === */
+  button[mat-raised-button] {
+    text-transform: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  /* === Sign Up Button Container === */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* === Sign Up Button Specific Styling === */
+  .text-center button {
+    margin-top: 10px;
+    width: 150px;
+  }
+  
+  /* === Responsive === */
+  @media (max-width: 500px) {
+    .container {
+      padding: 0 15px;
+    }
+  
+    .card {
+      padding: 20px;
+    }
+  }
+  
